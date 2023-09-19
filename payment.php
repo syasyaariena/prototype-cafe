@@ -6,4 +6,7 @@
     </ul>
 
     <P>Payment option:</P>
-    <a href="success.php"><img src="maybank.png" alt="" srcset=""></a>
+    <a href="success.php"><img src="bank.jpg" alt="" srcset=""></a>
+    <a href="success.php"><img src="touch.png" alt="" srcset=""></a>
+    <a href="success.php"><img src="cimb.png" alt="" srcset=""></a>
+    <a href="success.php"><img src="bsn.png" alt="" srcset=""></a>
