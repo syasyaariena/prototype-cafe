@@ -1,7 +1,6 @@
 <?php
 Session_start();
 ?>
-
 <head>
     <style>
         /* Apply styles to the form container */
@@ -77,13 +76,11 @@ input[type="reset"]:hover {
 
         </style>
 </head>
-
 <form method="POST">
     <h1>SYA'S CAFE</h1>
     <ul>
         <li> <a href="login.php">LOGIN</a></li>
         <li> <a href="paparanmenu.php">MENU</a></li>
-        <li> <a href="order.php">ORDER</a></li>
     </ul>
     <img src="person.png" alt="" srcset=""> <input type="text" name="nama" placeholder="Masukkan Nama Anda"> <br>
     <img src="call.png" alt="" srcset=""><input type="number" name="notel" placeholder="Masukkan No Telefon Anda"> <br>

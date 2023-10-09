@@ -81,11 +81,40 @@ body {
     <ul>
         <li> <a href="login.php">LOGIN</a></li>
         <li> <a href="paparanmenu.php">MENU</a></li>
-        <li> <a href="order.php">ORDER</a></li>
     </ul>
-    <img src="pasta.jpeg" alt="" srcset="">
-   <p> Spaghetti Carbonara </p> <br>
-   <p> Rm 10.00 </p>
-    <br>
-    <input type="submit" value="order" name="order">
+    <body>
+
+    <img id="clickableImage" src="pasta.jpeg" alt="Clickable Image">
+    <script src="script.js"></script>
+    <!DOCTYPE html>
+
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" value="1" min="1" onchange="updateTotalPrice()">
+    
+    <label for="pricePerItem">Price per Item:</label>
+    <span id="pricePerItem">RM10.00</span>
+    
+    <h2>Total Price:</h2>
+    <span id="totalPrice">RM10.00</span>
+
+    <script>
+        // Function to update the total price
+        function updateTotalPrice() {
+            const quantityInput = document.getElementById("quantity");
+            const pricePerItemElement = document.getElementById("pricePerItem");
+            const totalPriceElement = document.getElementById("totalPrice");
+
+            // Get the quantity and price per item values
+            const quantity = parseFloat(quantityInput.value);
+            const pricePerItem = parseFloat(pricePerItemElement.textContent.replace("RM", ""));
+
+            // Calculate the total price
+            const totalPrice = quantity * pricePerItem;
+
+            // Update the total price element
+            totalPriceElement.textContent = "RM" + totalPrice.toFixed(2);
+        }
+    </script>
+    <br><a href="pay.php"><input type="submit" value="order" name="order"></a>
+  </body>
 </html>

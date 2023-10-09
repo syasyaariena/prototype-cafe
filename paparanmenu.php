@@ -80,20 +80,22 @@ body{
     <ul>
         <li> <a href="login.php">LOGIN</a></li>
         <li> <a href="paparanmenu.php">MENU</a></li>
-        <li> <a href="order.php">ORDER</a></li>
     </ul>
 </div>
 <ul>
-    <li><a href="chicken.php"><img src="chicken1.jpg" alt="" srcset=""  ></a></li>
-    <br><div class ="eat">Korean Chicken<br>RM 15.00/5pcs<div>
+    <li><a href="chicken.php"><img src="chicken1.jpg" alt="" srcset=""></a></li>
+    <br>Korean Chicken<br>RM 15.00/5pcs
     <br>
     <li><a href="cake.php"><img src="cake.jpg" alt="" srcset=""></a></li>
-    <br><div class="eat">Chocolate cake <br> RM 15.00</div>
+    <br>Chocolate cake <br> RM 15.00
     <br>
     <li><a href="pasta.php"><img src="pasta.jpeg" alt="" srcset=""></a></li>
-    <br><div class="eat">Spaghetti Carbonara <br> RM 10.00 </div>
+    <br>Spaghetti Carbonara <br> RM 10.00 
     <br>
     <li><a href="smoothie.php"><img src="smoothie.jpg" alt="" srcset=""></a></li>
-    <br><div class ="eat">Fruit Smoothie <br> RM 11.00</div>
+    <br>Fruit Smoothie <br> RM 11.00
     <br>
 </ul>
+
+
+

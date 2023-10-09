@@ -2,7 +2,6 @@
     <ul>
         <li> <a href="login.php">LOGIN</a></li>
         <li> <a href="paparanmenu.php">MENU</a></li>
-        <li> <a href="order.php">ORDER</a></li>
     </ul>
 
 <a href="payment.php"><input type="submit" value="pay online" name="payonline"></a><br>
