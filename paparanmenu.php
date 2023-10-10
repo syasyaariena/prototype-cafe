@@ -1,5 +1,5 @@
 <style>
-/* Apply styles to the menu section */
+
 #menu {
   background-color: #E6C7BD;
   border-radius: 30px;
@@ -29,7 +29,7 @@ text-align:center;
   color: black;
 }
 
-/* Apply styles to the food items */
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -52,19 +52,19 @@ ul li a {
   text-decoration: none;
 }
 
-/* Apply styles to the food item descriptions */
+
 ul li br {
   display: none;
 }
 
-/* Apply styles to the food item images */
+
 ul li img {
   max-width: 20%;
   height: auto;
   border: 1px solid #ccc;
   border-radius: 10px;
 }
-/* Apply styles to the food item names and prices */
+
 ul li p {
   margin: 10px 0;
 }
@@ -89,12 +89,14 @@ body{
     <li><a href="cake.php"><img src="cake.jpg" alt="" srcset=""></a></li>
     <br>Chocolate cake <br> RM 15.00
     <br>
+    <div class="eat">
     <li><a href="pasta.php"><img src="pasta.jpeg" alt="" srcset=""></a></li>
     <br>Spaghetti Carbonara <br> RM 10.00 
     <br>
     <li><a href="smoothie.php"><img src="smoothie.jpg" alt="" srcset=""></a></li>
     <br>Fruit Smoothie <br> RM 11.00
     <br>
+</div>
 </ul>
 
 

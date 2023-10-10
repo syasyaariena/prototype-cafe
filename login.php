@@ -3,7 +3,7 @@ Session_start();
 ?>
 <head>
     <style>
-        /* Apply styles to the form container */
+        
 form {
   max-width: 400px;
   margin: 0 auto;
@@ -14,13 +14,13 @@ form {
   text-align: center;
 }
 
-/* Style the form heading */
+
 h1 {
   font-size: 24px;
   color: #333;
 }
 
-/* Style the list in the navigation menu */
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -41,7 +41,7 @@ ul li a:hover{
     background-color: #E48586;
 }
 
-/* Style the input fields and icons */
+
 img {
   vertical-align: middle;
   margin-right: 10px;
@@ -57,7 +57,7 @@ input[type="number"] {
   border-radius: 5px;
 }
 
-/* Style the submit and reset buttons */
+
 input[type="submit"],
 input[type="reset"] {
   background-color: #D3CEDF;
@@ -90,12 +90,16 @@ input[type="reset"]:hover {
 <?php
 include("config.php");
 if(isset($_POST['login'])){
-    $nama=$_POST ['nama'];
-    $notel=$_POST ['notel'];
+    $nama = $_POST['nama'];
+    $notel = $_POST['notel'];
 
-    $query=mysqli_query($sambungan,"INSERT INTO pelanggan WHERE nama='$nama',notel='$notel'");
+    
+    $query = mysqli_query($sambungan, "INSERT INTO pelanggan (nama, notel) VALUES ('$nama', '$notel')");
 
-    header("location:paparanmenu.php");
-        
+    if($query) {
+        header("location:paparanmenu.php");
+    } else {
+        echo "Error: " . mysqli_error($sambungan);
     }
+}
 ?>

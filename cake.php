@@ -11,7 +11,7 @@ h1 {
             background-color: #E6C7BD;
         }
 
-        /* Style the navigation menu */
+    
         ul {
             list-style-type: none;
             padding: 0;
@@ -25,9 +25,6 @@ h1 {
             display: inline;
             margin-right: 20px;
         }
-        li:hover{
-          background-color:#E48586;
-        }
 
         a {
             text-decoration: none;
@@ -35,10 +32,9 @@ h1 {
             font-weight: bold;
         }
         a:hover{
-            background-color: 
+            background-color: #E48586;
         }
 
-        /* Style the image */
         img {
             display: block;
             margin: 20px auto;
@@ -48,15 +44,14 @@ h1 {
             border-radius: 20px;
         }
 
-        /* Style the food item description */
+        
         p {
             text-align: center;
             font-size: 18px;
             color: #555;
         }
 
-        /* Style the button */
-        input[type="button"]{
+        input[type="submit"]{
             display: block;
             margin: 20px auto;
             background-color: #E48586;
@@ -68,7 +63,7 @@ h1 {
             font-size: 16px;
         }
 
-        input[type="button"]:hover {
+        input[type="submit"]:hover {
             background-color: #F2D8D8;
         }
         body {
@@ -96,20 +91,18 @@ h1 {
     <span id="totalPrice">RM15.00</span>
 
     <script>
-        // Function to update the total price
+    
         function updateTotalPrice() {
             const quantityInput = document.getElementById("quantity");
             const pricePerItemElement = document.getElementById("pricePerItem");
             const totalPriceElement = document.getElementById("totalPrice");
 
-            // Get the quantity and price per item values
+        
             const quantity = parseFloat(quantityInput.value);
             const pricePerItem = parseFloat(pricePerItemElement.textContent.replace("RM", ""));
 
-            // Calculate the total price
             const totalPrice = quantity * pricePerItem;
 
-            // Update the total price element
             totalPriceElement.textContent = "RM" + totalPrice.toFixed(2);
         }
     </script>

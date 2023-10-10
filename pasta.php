@@ -1,7 +1,7 @@
 <html>
 <head>
     <style>
-/* Apply styles to the header */
+
 h1 {
   text-align: center;
   font-size: 32px;
@@ -12,7 +12,7 @@ h1 {
   background-color: #E6C7BD;
 }
 
-/* Style the navigation menu */
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -37,7 +37,7 @@ a {
 a:hover {
   background-color: #E48586;
 }
-/* Style the image */
+
 img {
   display: block;
   margin: 20px auto;
@@ -47,14 +47,14 @@ img {
   border-radius: 20px;
 }
 
-/* Style the food item description */
+
 p {
   text-align: center;
   font-size: 18px;
   color: #555;
 }
 
-/* Style the "Order" button */
+
 input[type="submit"] {
   display: block;
   margin: 20px auto;
