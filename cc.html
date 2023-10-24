@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order List</title>
+</head>
+<body>
+    <h1>Your Order List</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th>Remove</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Cart items will be displayed here -->
+        </tbody>
+    </table>
+    <p>Total: RM<span id="totalpriced">0.00</span></p>
+    <a href="payment.php"><button id="checkout-button">Checkout</button></a>
+    
+    <script>
+        // You can use JavaScript to populate and manage the cart.
+        // This is a placeholder for demonstration purposes.
+        const cartItems = [
+            { product: 'chocolate cake', price: 10.00, quantity: 2 },
+            { product: 'pasta', price: 20.00, quantity: 1 },
+        ];
+
+        const cartTable = document.querySelector('tbody');
+        const cartTotal = document.getElementById('cart-total');
+
+        function updateCart() {
+            cartTable.innerHTML = '';
+            let total = 0;
+            cartItems.forEach(item => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${item.product}</td>
+                    <td>$${item.price.toFixed(2)}</td>
+                    <td>${item.quantity}</td>
+                    <td>$${(item.price * item.quantity).toFixed(2)}</td>
+                    <td><button onclick="removeItem('${item.product}')">Remove</button></td>
+                `;
+                cartTable.appendChild(row);
+                total += item.price * item.quantity;
+            });
+            cartTotal.textContent = total.toFixed(2);
+        }
+
+        function removeItem(product) {
+            const index = cartItems.findIndex(item => item.product === product);
+            if (index !== -1) {
+                cartItems.splice(index, 1);
+                updateCart();
+            }
+        }
+
+        updateCart();
+    </script>
+</body>
+</html>

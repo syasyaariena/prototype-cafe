@@ -65,6 +65,6 @@ a[href="cashier.php"] input[type="submit"]:hover {
         <li> <a href="paparanmenu.php">MENU</a></li>
     </ul>
 
-<a href="payment.php"><input type="submit" value="pay online" name="payonline"></a><br>
-<a href="cashier.php"><input type="submit" value="pay at cashier" name="cashier"></a>
+<a href="cc.html"><input type="submit" value="pay online" name="payonline"></a><br>
+<a href="cc.html"><input type="submit" value="pay at cashier" name="cashier"></a>
 </body>
