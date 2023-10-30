@@ -42,17 +42,14 @@ p {
   margin-top: 20px;
 }
 
-a[href="success.php"] img {
+a img {
   display: inline-block;
   margin: 10px;
   max-width: 100px; 
   height: auto;
   border: 1px solid #ccc;
   border-radius: 5px;
-  transition: transform 0.3s; 
-
-a[href="success.php"] img:hover {
-  transform: scale(1.1); 
+  transition: transform 0.3s;  
 }
 
     </style>
@@ -65,7 +62,7 @@ a[href="success.php"] img:hover {
     </ul>
 
     <P>Payment option:</P>
-    <a href="success.php"><img src="bank.jpg" alt="" srcset=""></a>
-    <a href="success.php"><img src="touch.png" alt="" srcset=""></a>
-    <a href="success.php"><img src="cimb.png" alt="" srcset=""></a>
-    <a href="success.php"><img src="bsn.png" alt="" srcset=""></a>
+    <a href="https://www.maybank2u.com.my/mbb/m2u/public/promoChannel.do?programId=PRO01-Accounts&chCatId=/mbb/Personal/PRO-Promotions"><img src="bank.jpg" alt="" srcset=""></a>
+    <a href="https://www.touchngo.com.my/goplus/#:~:text=Step%201%3A%20Tap%20'Transfer',you'd%20like%20to%20transfer."><img src="touch.png" alt="" srcset=""></a>
+    <a href="https://www.cimbclicks.com.my/"><img src="cimb.png" alt="" srcset=""></a>
+    <a href="https://www.mybsn.com.my/mybsn/login/login.do"><img src="bsn.png" alt="" srcset=""></a>

@@ -80,7 +80,7 @@ input[type="reset"]:hover {
     <h1>SYA'S CAFE</h1>
     <ul>
         <li> <a href="login.php">LOGIN</a></li>
-        <li> <a href="cafe.php">MENU</a></li>
+        <li> <a href="cart.html">MENU</a></li>
     </ul>
     <img src="person.png" alt="" srcset=""> <input type="text" name="nama" placeholder="Masukkan Nama Anda"> <br>
     <img src="call.png" alt="" srcset=""><input type="number" name="notel" placeholder="Masukkan No Telefon Anda"> <br>
@@ -97,7 +97,7 @@ if(isset($_POST['login'])){
     $query = mysqli_query($sambungan, "INSERT INTO pelanggan (nama, notel) VALUES ('$nama', '$notel')");
 
     if($query) {
-        header("location:cafe.php");
+        header("location:cart.html");
     } else {
         echo "Error: " . mysqli_error($sambungan);
     }
